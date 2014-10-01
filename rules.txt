@@ -1,0 +1,51 @@
+daca componenta-meniu = curcan
+atunci culoare-vin = rosie cf 0.7
+si culoare-vin = alba cf 0.2
+
+daca componenta-meniu = peste
+atunci culoare-vin = alba
+
+daca sos-meniu = sos-alb
+atunci culoare-vin = alba cf 0.6
+
+daca componenta-meniu = porc
+atunci culoare-vin = rosie
+
+daca sos-meniu = sos-alb
+atunci tip-vin = sec cf 0.8
+si tip-vin = demisec cf 0.6
+
+daca sos-meniu = sos-tomat
+atunci tip-vin = dulce cf 0.8
+si tip-vin = demisec cf 0.5
+
+daca sos-meniu = necunoscut
+atunci tip-vin = demisec
+
+daca componenta-meniu = curcan
+atunci tip-vin = dulce cf 0.6
+si tip-vin = demisec cf 0.4
+
+daca culoare-vin = rosie
+si tip-vin = dulce
+atunci vin = gamay
+
+daca culoare-vin = rosie
+si tip-vin = sec
+atunci vin = cabernet-sauvignon
+
+daca culoare-vin = rosie
+si tip-vin = demisec
+atunci vin = pinot-noir
+
+daca culoare-vin = alba
+si tip-vin = dulce
+atunci vin = chenin-blanc
+
+daca culoare-vin = alba
+si tip-vin = sec
+atunci vin = chardonnay
+
+daca culoare-vin = alba
+si tip-vin = demisec
+atunci vin = riesling

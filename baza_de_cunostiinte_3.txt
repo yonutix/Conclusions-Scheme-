@@ -1,0 +1,19 @@
+daca vreme = ninsoare
+atunci afara = ninge
+
+daca vreme = ploaie
+atunci afara = ploua cf 0.8
+
+daca vreme = soare
+atunci afara = insorit
+
+daca afara = ninge
+atunci accesoriu = fes
+
+daca afara = ploua
+atunci accesoriu = umbrela
+si mod = trist cf 0.5
+
+daca accesoriu = umbrela
+si afara = ploua
+atunci mod = depresiv cf 0.9

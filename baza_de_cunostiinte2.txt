@@ -1,0 +1,213 @@
+daca has-sauce = yes si
+sauce = spicy
+atunci best-body = full
+
+daca tastiness = delicate
+atunci best-body = light cf 0,8
+
+daca tastiness = average
+atunci best-body = light cf 0,3 si
+best-body = medium cf 0,6 si
+best-body = full cf 0,3
+
+daca tastiness = strong
+atunci best-body = medium cf 0,4 si
+best-body = full cf 0,8
+
+daca has-sauce = yes si
+sauce = cream
+atunci best-body = medium cf 0,4 si
+best-body = full cf 0,6
+
+daca main-component = meat si
+has-veal = no
+atunci best-color = red cf 0,9
+
+daca main-component = poultry si
+has-turkey = no
+atunci best-color = white cf 0,9 si
+best-color = red cf 0,3
+
+daca main-component = fish
+atunci best-color = white
+
+daca main-component = meat si
+has-sauce = yes si
+sauce = tomato
+atunci best-color = red
+
+daca main-component = poultry si
+has-turkey = yes
+atunci best-color = red cf 0,8 si
+best-color = white cf 0,5
+
+daca main-component is unknown si
+has-sauce = yes si
+sauce = cream
+atunci best-color = white cf 0,4
+
+daca has-sauce = yes si
+sauce = sweet
+atunci best-sweetness = sweet cf 0,9 si
+best-sweetness = medium cf 0,4
+
+daca has-sauce = yes si
+sauce = spicy
+atunci feature = spiciness
+
+daca best-body = light
+atunci recommended-body = light
+
+daca best-body = medium
+atunci recommended-body = medium
+
+daca best-body = full
+atunci recommended-body = full
+
+daca best-body is unknown si
+preferred-body = light
+atunci recommended-body = light
+
+daca best-body is unknown si
+preferred-body = medium
+atunci recommended-body = medium
+
+daca best-body is unknown si
+preferred-body = full
+atunci recommended-body = full
+
+daca best-body is unknown si
+preferred-body is unknown
+atunci recommended-body = medium
+
+daca best-color = red
+atunci recommended-color = red
+
+daca best-color = white
+atunci recommended-color = white
+
+daca best-color is unknown si
+preferred-color = red
+atunci recommended-color = red
+
+daca best-color is unknown si
+preferred-color = white
+atunci recommended-color = white
+
+daca best-color is unknown si
+preferred-color is unknown
+atunci recommended-color = red cf 0,5 si
+recommended-color = white cf 0,5
+
+daca best-sweetness = dry
+atunci recommended-sweetness = dry
+
+daca best-sweetness = medium
+atunci recommended-sweetness = medium
+
+daca best-sweetness = sweet
+atunci recommended-sweetness = sweet
+
+daca best-sweetness is unknown si
+preferred-sweetness = dry
+atunci recommended-sweetness = dry
+
+daca best-sweetness is unknown si
+preferred-sweetness = medium
+atunci recommended-sweetness = medium
+
+daca best-sweetness is unknown si
+preferred-sweetness = sweet
+atunci recommended-sweetness = sweet
+
+daca best-sweetness is unknown si
+preferred-sweetness is unknown
+atunci recommended-sweetness = medium
+
+daca recommended-color = red si
+recommended-body = medium si
+recommended-sweetness = medium
+atunci wine = gamay
+
+daca recommended-color = red si
+recommended-body = medium si
+recommended-sweetness = sweet
+atunci wine = gamay
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = dry
+atunci wine = chablis
+
+daca recommended-color = white si
+recommended-body = medium si
+recommended-sweetness = dry
+atunci wine = sauvignon-blanc
+
+daca recommended-color = white si
+recommended-body = medium si
+recommended-sweetness = dry
+atunci wine = chardonnay
+
+daca recommended-color = white si
+recommended-body = full si
+recommended-sweetness = medium
+atunci wine = chardonnay
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = dry
+atunci wine = soave
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = medium
+atunci wine = soave
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = medium
+atunci wine = riesling
+
+daca recommended-color = white si
+recommended-body = medium si
+recommended-sweetness = sweet
+atunci wine = riesling
+
+daca recommended-color = white si
+recommended-body = full si
+feature = spiciness
+atunci wine = gewuerztraminer
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = medium
+atunci wine = chenin-blanc
+
+daca recommended-color = white si
+recommended-body = light si
+recommended-sweetness = sweet
+atunci wine = chenin-blanc
+
+daca recommended-color = red si
+recommended-body = light
+atunci wine = valpolicella
+
+daca recommended-color = red si
+recommended-sweetness = dry
+atunci wine = cabernet-sauvignon si
+wine = zinfsiel
+
+daca recommended-color = red si
+recommended-sweetness = medium
+atunci wine = cabernet-sauvignon si
+wine = zinfsiel
+
+daca recommended-color = red si
+recommended-body = medium si
+recommended-sweetness = medium
+atunci wine = pinot-noir
+
+daca recommended-color = red si
+recommended-body = full
+atunci wine = burgundy
